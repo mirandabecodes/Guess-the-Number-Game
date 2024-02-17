@@ -1,0 +1,130 @@
+:root {
+    --green: #0dcd38;
+    --red: #e0194a;
+    --background: #cca1ec;
+    --gradient-1: #6b3c9d;
+    --gradient-2:#7d0dd2;
+
+}
+
+html{
+    font-size: 10px;
+    font-weight: 300;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bolder;
+}
+
+body {
+    width: 90vw;
+    margin: 0 auto;
+    padding: 5rem;
+    background: radial-gradient(var(--gradient-1), var(--gradient-2));
+}
+
+main {
+    text-align: center;
+    background: var(--background);
+    border: solid #dd07a7;
+    border-width: 8px;
+    min-height: 80vh;
+    border-radius: 3rem 3rem;
+    padding: 1rem;
+    color: #1f2933;
+}
+
+h2{
+    font-size: 2.2rem;
+    margin: 4rem 0;
+}
+
+p{
+    font-size: 1.8rem;
+
+}
+
+.button-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    border: none;
+    cursor: pointer;
+    background: var(--green);
+    padding: 2rem;
+    border-radius: 1rem 1rem 0 0;
+    font-family: inherit;
+
+}
+
+button:last-child {
+    background: var(--red);
+    border-radius: 0 0 1rem 1rem;
+}
+
+h3{
+    font-size: 2rem;
+}
+
+input {
+    border: 3px solid #e085c9;
+    background: transparent;
+    margin: 1rem 0;
+    padding: 1rem 0;
+    width: 16rem;
+    text-align: center;
+}
+
+#range{
+    display: flex;
+    background: var(--green);
+    height:  50px;
+    padding: 0;
+    margin: 0 0 4rem 0;
+}
+
+#rangeOutput {
+    font-size: 1.6rem;
+}
+
+.stats {
+    text-align: left;
+
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info span {
+    font-size: 1.6rem;
+}
+
+#newGameButton {
+    border-radius: 0;
+}
+
+.flash{
+    animation: flash 1s infinite;
+}
+
+@keyframes flash {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (min-width: 800px) {
+    body {
+        width: 50vw;
+    }
+}
